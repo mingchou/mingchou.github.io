@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Live Demo</h3>
+    <button id="show">Show Icon</button>
+    <div id="container"></div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+        document.querySelector('#show').addEventListener('click', () => {
+            const iconUrl = 'test.jpg';
+            let imgElement = document.createElement('img');
+            imgElement.src = iconUrl;
+            document.querySelector('#container').appendChild(imgElement);
+        });
+    </script>
+  </body>
+</html>
+

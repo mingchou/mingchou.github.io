@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="openwindow_iframe.js" defer></script>
+
+  <h1>This is a subframe</h1>
+  <div>
+    <button class="opener" data-target="_self">
+      Click to window.open('https://mingchou.github.io/openwindow_iframe.html', '_self');
+    </button>
+  </div>
+
+  <div>
+    <button class="opener" data-target="_blank">
+      Click to window.open('https://mingchou.github.io/openwindow_iframe.html', '_blank');
+    </button>
+  </div>
+
+  <div>
+    <button class="opener" data-target="_parent">
+      Click to window.open('https://mingchou.github.io/openwindow_iframe.html', '_parent');
+    </button>
+  </div>
+
+  <div>
+    <button class="opener" data-target="_top">
+      Click to window.open('https://mingchou.github.io/openwindow_iframe.html', '_top');
+    </button>
+  </div>
+
+  <div>
+    <button class="noopener" data-target="_blank">
+      Click to window.open('https://mingchou.github.io/openwindow_iframe.html', '_blank', 'noopener');
+    </button>
+  </div>
+
+  <div>
+    <button class="noreferrer" data-target="_blank">
+      Click to window.open('https://mingchou.github.io/openwindow_iframe.html', '_blank', 'noreferrer');
+    </button>
+  </div>
+</body>
+</html>
